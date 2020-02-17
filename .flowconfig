@@ -1,0 +1,23 @@
+[include]
+src
+
+
+[untyped]
+
+[declarations]
+node_modules/*
+
+
+[ignore]
+.*/dist/**
+; <PROJECT_ROOT>/node_modules/**
+
+[libs]
+
+
+[lints]
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+
+[strict]
