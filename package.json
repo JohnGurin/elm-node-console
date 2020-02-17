@@ -1,0 +1,33 @@
+{
+  "name": "elm-node-console",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "prepack": "rm -rf src_esm/** rm -rf dist/** && cross-env NODE_ENV=prod rollup -c"
+  },
+  "keywords": [],
+  "author": "John Gurin",
+  "license": "ISC",
+  "main": "src_esm/main.mjs",
+  "bin": "dist/cli.js",
+  "files": [
+    "dist",
+    "src_es"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-flow-comments": "^7.8.3",
+    "@babel/plugin-transform-flow-strip-types": "^7.8.3",
+    "@babel/preset-flow": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "cross-env": "^7.0.2",
+    "flow-bin": "^0.120.1",
+    "gar": "^1.0.4",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-multi-input": "^1.1.1",
+    "rollup-plugin-terser": "^5.3.0"
+  }
+}
